@@ -37,7 +37,7 @@ Here is a summary of the main results.
 
 You can include an image like this:
 
-![Image](../blob/master/src/figures/iit.png?raw=true)
+![Image](/blob/master/src/figures/iit.png?raw=true)
 
 ## Conclusions / Future Work
 
