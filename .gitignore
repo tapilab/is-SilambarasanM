@@ -2,3 +2,4 @@
 src/.ipynb_checkpoints/*
 backup/*
 *.pyc
+*.pkl
