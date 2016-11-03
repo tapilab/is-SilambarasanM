@@ -46,10 +46,10 @@ def robust_request(twitter, resource, params, max_tries=5):
         if request.status_code == 200:
             return request
         elif request.status_code == 34:
-            print("Account",params['screen_name'],"doesn't exist.")
+            print "Account",params['screen_name'],"doesn't exist."
             return None
         else:
-            print ('Got error:', request.text, '\nsleeping for 15 minutes.')
+            print 'Got error:', request.text, '\n sleeping for 15 minutes.'
             sys.stderr.flush()
             time.sleep(61 * 15)
 
@@ -68,7 +68,7 @@ def get_followers(screen_name):
         response = eval(str(request.json()))
         followers = followers | set(response['ids'])
         next_cursor = response['next_cursor']
-        print ('Retrieved %d followers so far...'%len(followers))
+        print 'Retrieved %d followers so far...'%len(followers)
     return followers
 
 
@@ -79,7 +79,7 @@ for b in brands:
     followers = get_followers(b)
     data = b + '\t'+ '\t'.join([str(f) for f in followers]) + '\n'
     out_file.write(data)
-    print('Written',b)
+    print 'Written',b
     out_file.flush()
     os.fsync(out_file.fileno())
     sys.stdout.flush()
