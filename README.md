@@ -1,35 +1,35 @@
-# ms-project-template
-A template for students doing M.S. or undergraduate independent studies/theses.
-
-See instructions here: [Instructions.md](Instructions.md)
-
-This README.md file should summarize your project. Think of it as the short version of your project report.
-
 ## Problem
 
-Here is the problem your are going to solve.
+Build a Recommendation System to predict a brand of attribute (like eco-friendliness, nutritious or luxury) similar to the brands being followed by a user on Twitter.
 
 ## Research questions
 
-Here are the core questions / subproblems you will address:
 
-1. ...
-2. ...
-3. ...
+1. What is the perceived attribute value for a brand? How to measure it using Social Media Network?
+2. How similar are two brands with respect to an attribute?
+3. How does a marketing decision made by a brand impacts its perceived attribute rating?
 
 ## Related work
 
-Here's how other people have tried to solve this problem, with a few links/citations. 
+
+1. [Mining Brand Perceptions from Twitter Social Networks](http://pubsonline.informs.org/doi/10.1287/mksc.2015.0968)
+2. [Graph-based Features for Supervised Link Prediction](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjT0taP3MDQAhVB_IMKHUwRA9wQFgggMAA&url=https%3A%2F%2Fwww.kaggle.com%2Fblobs%2Fdownload%2Fforum-message-attachment-files%2F183%2Fsupervised_link_prediction.pdf&usg=AFQjCNFQGBzhQj8UOBp2JI7_CzXxvWBT4w&sig2=xF66ymtqm2cNnhz_5TxV3w)
 
 ## Data
 
-Here is a description of the data you collected.
+A list of Twitter handles of popular brands in United States were chosen from different sectors like Personal Care, Food, Household Chemicals, Electronic Appliance, Apparel and Car. There were 1440 brands collected for this work. For each Twitter account, the list of Follower IDs were collected using Twitter API and stored in a tab separated format. Each row represents an adjacency list form of followers list for a brand. First column is the Twitter handle of the brand and rest of the row is the list of follower ids with a maximum limit of 500000 followers.
 
-Here is an example data record.
+*Sample Record:*
 
+`conair_hair 2461773146  125072777 743873850 2163652136`
+
+`conair_hair` is the Twitter handle and `2461773146`, `125072777`, `743873850`, `2163652136` are ids of followers who follow *Conair* brand on Twitter.
 ## Methods
 
-Here is an outline of your approach.
+1. Collected the follower ids for the chosen brands Twitter accounts using Twitter API and stored in a text file.
+2. Calculated the Jaccard similarity based on the list of followers collected for each brand-brand pair.
+3. Training data was obtained with samples for positive and negative labels. An actual brand-follower link observed in the data was removed and used as a positive sample. A brand not followed by a follower was added as a negative sample.
+4. A baseline Logistic Regression Classifier was built using training data with positive and negative labels and the performance was evaluated.
 
 ## Results
 
@@ -42,4 +42,3 @@ You can include an image like this:
 ## Conclusions / Future Work
 
 Here's the main conclusions and a list of directions for improvement.
-
