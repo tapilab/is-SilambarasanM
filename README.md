@@ -13,7 +13,7 @@ Build a Recommendation System to predict a brand of attribute (like eco-friendli
 
 
 1. [Mining Brand Perceptions from Twitter Social Networks](http://pubsonline.informs.org/doi/10.1287/mksc.2015.0968)
-2. [Graph-based Features for Supervised Link Prediction](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjT0taP3MDQAhVB_IMKHUwRA9wQFgggMAA&url=https%3A%2F%2Fwww.kaggle.com%2Fblobs%2Fdownload%2Fforum-message-attachment-files%2F183%2Fsupervised_link_prediction.pdf&usg=AFQjCNFQGBzhQj8UOBp2JI7_CzXxvWBT4w&sig2=xF66ymtqm2cNnhz_5TxV3w)
+2. [The Link Prediction Problem for Social Networks](https://www.cs.cornell.edu/home/kleinber/link-pred.pdf)
 
 ## Data
 
