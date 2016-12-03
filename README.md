@@ -10,12 +10,13 @@ Link Prediction based on Brand Perception. Build a recommendation system to pred
 1. What is the perceived attribute value for a brand? How to measure it using Social Media Network?
 2. How to measure the similarity of two brands with respect to an 'attribute'?
 3. How does a marketing decision made by a brand impacts its perceived attribute rating?
+4. How to use the Social Network of Brands to recommend products?
 
 ## Related work
 
 1. [Mining Brand Perceptions from Twitter Social Networks](http://pubsonline.informs.org/doi/10.1287/mksc.2015.0968)
 2. [The Link Prediction Problem for Social Networks](https://www.cs.cornell.edu/home/kleinber/link-pred.pdf)
-
+3. [Graph-based Features for Supervised Link Prediction](http://ieeexplore.ieee.org/document/6033365/)
 ## Data
 
 A list of Twitter handles of popular brands in United States were chosen from different sectors like Personal Care, Food, Household Chemicals, Electronic Appliance, Apparel and Car. There were 1404 brands collected for this work. For each Twitter account, the list of Follower IDs were collected using Twitter API and stored in a tab separated format. Each row represents an adjacency list form of followers list for a brand. First column is the Twitter handle of the brand and rest of the row is the list of follower ids with a maximum limit of 500000 followers.
